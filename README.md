@@ -1,4 +1,4 @@
-# 📊 Data Quality - Validação e Enriquecimento de Contatos
+# 📊 Data Quality - Validação de Contatos
 
 Projeto focado em garantir a confiabilidade de dados de contato e medir o impacto da qualidade dos dados na capacidade de comunicação com clientes.
 
