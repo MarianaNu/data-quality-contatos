@@ -1,32 +1,73 @@
-# 📊 Data Quality - Enriquecimento e Validação de Contatos
+# 📊 Data Quality - Validação e Enriquecimento de Contatos
 
 ## 🧠 Contexto
-Este projeto simula um cenário de validação e tratamento de dados de contato (e-mail e telefone), com foco em melhorar a qualidade das informações.
+
+Em bases de dados reais, é comum encontrar inconsistências em informações de contato como e-mails e telefones.  
+Esses problemas impactam diretamente a efetividade de campanhas, a comunicação com clientes e a tomada de decisão.
 
 ---
 
 ## ⚠️ Problema
-Bases de dados podem conter:
-- E-mails inválidos
-- Telefones incorretos
-- Dados inconsistentes
+
+Dados de contato podem conter:
+
+- E-mails inválidos ou com padrões de teste (ex: "teste@", "naotem@...")
+- Telefones com formatação incorreta ou inválidos
+- Informações ausentes ou inconsistentes
+
+Isso pode gerar:
+- Baixa taxa de contato
+- Erros operacionais
+- Decisões baseadas em dados incorretos
 
 ---
 
 ## 🛠️ Solução
-Aplicação de regras de validação utilizando SQL para identificar e tratar inconsistências.
+
+Desenvolvi uma análise em SQL com foco em qualidade de dados, aplicando regras de validação mais robustas, como:
+
+### 📧 E-mails
+- Validação de formato
+- Identificação de padrões inválidos (teste, placeholder, etc)
+- Normalização dos dados
+
+### 📞 Telefones
+- Remoção de caracteres não numéricos
+- Validação de quantidade de dígitos (10 ou 11)
+- Regras para identificação de números inválidos
 
 ---
 
-## 📊 Dataset
-Base fictícia com dados válidos e inválidos.
+## 📊 Análise de Qualidade
+
+A análise não apenas identifica inconsistências, mas mede o impacto da qualidade dos dados:
+
+- % de e-mails inválidos  
+- % de telefones inválidos  
+- % de contatos totalmente válidos  
+- % de clientes sem nenhum contato válido  
 
 ---
 
-## 📈 Resultado
-Melhoria da qualidade dos dados e maior confiabilidade para análises.
+## 📈 Impacto
+
+Esse tipo de análise permite:
+
+- Aumentar a eficiência de campanhas  
+- Reduzir erros operacionais  
+- Melhorar a confiabilidade dos dados  
+- Apoiar decisões mais assertivas  
+
+---
+
+## 🧪 Tecnologias utilizadas
+
+- SQL  
+- Lógica de validação de dados  
+- Estruturação analítica  
 
 ---
 
 ## ⚠️ Observação
-Projeto com dados fictícios.
+
+Projeto desenvolvido com dados fictícios, inspirado em cenários reais de negócio.
